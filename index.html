@@ -1,0 +1,108 @@
+
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			essai_site
+		</title>
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				
+				<header>
+					<ul>
+						<li><a href ="#">ACCEUIL</a></li>
+						<li><a href ="#">ACTULITE</a></li>
+					</ul>
+				</header>
+			</div>
+			<div class="row">
+				<article>
+					<header>
+						<p>
+							<h1>Les iPhone peuvent être piratés par un simple mail vérolé.</h1>
+						</p>
+						<figure>
+							<img src="66d1c3461890b22dae3d617bb0 (2).jpg" alt="image_entete">
+
+						</figure>
+						
+					</header>
+					<p>
+						<h3>
+							Des failles zéro-day permettent de hacker l’application Mail d’iOS, voire le système tout entier. Ces vulnérabilités sont d’ores et déjà exploitées par des pirates. Un patch est en cours de développement et sera disponible prochainement.
+						</h3>
+					</p>
+					<p>
+						Alerte générale pour les utilisateurs d’iPad. A l’occasion d’une simple d’une enquête réalisée chez un  client, les chercheurs en sécurité de ZecOps ont mis la main sur deux failles zéro-day dans l’application Mail d’iOS.
+Ces  vulnérabilités existent dans toutes les versions d’iOS sorties depuis 2012 et n’ont pas encore été patchées. Elles ont été exploitées depuis au mois de janvier 2018, par un groupe de hackeurs probablement d’origine étatique. Les chercheurs de ZepOps ont pu identifier des victimes en Amérique du nord, au japon, en Allemagne, en Israël, et en Arabie Saoudite.</br>
+
+<h4>Un hack très furtif</h4>.
+Ces attaques puissantes, car particulièrement silencieuse. Pour être piraté sur iOS 13, il suffit que l’application Mail soit ouverte en tâche de fond et que l’utilisateur ciblé reçoive un mail. Aucune utilisation de l’utilisateur n’est nécessaire.</br></br></br>
+Sur iOS 12, c’est in poil plus compliqué. Pour réaliser un attaque zéro-clic, les pirates doivent contrôler les serveurs depuis lequel l’email piégé est envoyé. Sinon, pour que l’exploit puisse s’exécuter, il faut incités l’utilisateur à l’ouvrir l’email piégé. Ce qui n’est pas forcément très compliqué non plus.
+Si l’attaque se passe bien, la victime ne voit que du  feu.
+«Hormis un ralentissement temporaire du client de messagerie, les utilisateurs ne devrait voir aucun comportement anormal », expliquent les chercheurs dans une note de blog.</br></br></br></br>
+Des signes apparaissent en revanche si l’attaque ne fonctionne pas. Sur iOS 12, cela provoque un crash du client messagerie. Sur iOS13,  la victime verra des messages sans contenu. De quoi mettre la puce à l’oreille.
+Quel est le risque d’une telle attaque ? En piratant l’application Mail, les pirates peuvent lire, er supprimer n’importe quel e-mail du client de messagerie. Si l’attaque dispose en plus d’une faille au niveau du Kernel, il pourrait sortir du contexte de l’application et prendre le contrôle de l’appareil. Les chercheurs de ZecOps estiment que le groupe de pirate en question a cette capacité. Le risque potentiel serait donc « énorme », soulignent-ils.
+Alerté par ZecOps, Apple a d’ores et déjà écrit un patch qui a intégré dans la version bêta d’iOS 13.4.5. En attendant, que cette mise à jour soit disponible, il n’y a pas 36 façon pour se protéger : il ne faut pas utiliser l’application Mail, mais se tourner vers un autre client de messagerie, par exemple Outlook ou Gmail.</br></br></br>
+
+Techniquement les failles sont liées à des bugs dans la fonction MFMutableData de la librairie MIME. Pour les exploiter, il suffit par exemple d’envoyer un e-mail d’une certaine taille. En raison d’un manque de garde fou, il est alors possible d’accéder à des zones de mémoire non autorisée(Out of bound write) ou de provoquer un dépassement du tas(Heap Overflow).
+
+ <h4>Mise à jour le 24 avril</h4> 
+
+Apple conteste e partie l’analyse de ZecOps. Dans une déclaration relayée par Bloomberg , l’entreprise explique :
+« nous avons étudier en profondeur le rapport du chercheur et, sur la base des informations fournies, nous avons conclus que ce problème ne posait pas de risque immédiat pour nos utilisateur. Le chercheur a identifié trois problème dans Mail, mais à eux seuls, ils sont insuffisant pour contournes les protections de l’iPhone et de l’iPad, et nous n’avons trouvé aucune preuve qu’ils ont été utilisés contre des clients.
+
+Source : ZecOps
+
+					</p>
+				</article>
+			</div>
+			<div class="row">
+				<from class="form">
+					<div class="form-group">
+						<labal for="nom">Nom:</label>
+							<input type="text" class="form-control" id="nom" input-lg>
+					</div>
+					<div class="form-group">
+						<label for="Prenom">Prenom:</label>
+						<input type="text" class="form-control" id="prenom" input-lg>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" colum="15" row="30" placeholder="Votre commantaire"></textarea>
+					</div>
+					<input type="button" id="bouton" value="Soumettre">
+				</form>
+			</div>
+
+			<div class="row">
+				
+				<section class="ident1">
+			
+
+				<div class="icone"><a href="#"><img src="face.jpg" alt="icône_face" width="38px" height="auto"></a>
+					<a href="#"><img src="twitter.jpg" alt="icône_twitter" width="40px" height="auto" ></a>
+					<a href="#"><img src="in.jpg" alt="icône_in" width="37px" height="auto"></a>
+				</div>
+			
+		        </section>
+		
+			</div>
+			<div class="row">
+				<footer>
+			 			<h3>copyright &copy 2020</h3>
+		        </footer>
+				
+			</div>
+		</div>
+	</body>
+</html>
